@@ -4,7 +4,7 @@ global.override.block(LogicBlock, {
 		const buttons = table.table().get(); // Put all buttons in a nested table to fix spacing
 		this.super$buildConfiguration(buttons); // Pass the button table
 
-		const collapserButton = buttons.button(Icon.downOpen, Styles.clearTransit, () => {
+		const collapserButton = buttons.button(Icon.downOpen, Styles.cleart, () => {
 			opened = !opened;
 			collapserButton.style.imageUp = opened ? Icon.upOpen : Icon.downOpen;
 		}).size(40).tooltip("vars").get();
